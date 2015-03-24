@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		2CDD71601AC225700092ED59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDD715F1AC225700092ED59 /* AppDelegate.swift */; };
 		2CDD71631AC225700092ED59 /* CourseLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CDD71611AC225700092ED59 /* CourseLister.xcdatamodeld */; };
-		2CDD71651AC225700092ED59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDD71641AC225700092ED59 /* ViewController.swift */; };
+		2CDD71651AC225700092ED59 /* CourseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDD71641AC225700092ED59 /* CourseListViewController.swift */; };
 		2CDD71681AC225700092ED59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CDD71661AC225700092ED59 /* Main.storyboard */; };
 		2CDD716A1AC225700092ED59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CDD71691AC225700092ED59 /* Images.xcassets */; };
 		2CDD716D1AC225700092ED59 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDD716B1AC225700092ED59 /* LaunchScreen.xib */; };
 		2CDD71791AC225700092ED59 /* CourseListerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDD71781AC225700092ED59 /* CourseListerTests.swift */; };
+		2CDD718A1AC22A430092ED59 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDD71881AC22A430092ED59 /* CourseCell.swift */; };
+		2CDD718B1AC22A430092ED59 /* CourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDD71891AC22A430092ED59 /* CourseCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +33,15 @@
 		2CDD715E1AC225700092ED59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CDD715F1AC225700092ED59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CDD71621AC225700092ED59 /* CourseLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CourseLister.xcdatamodel; sourceTree = "<group>"; };
-		2CDD71641AC225700092ED59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2CDD71641AC225700092ED59 /* CourseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewController.swift; sourceTree = "<group>"; };
 		2CDD71671AC225700092ED59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CDD71691AC225700092ED59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2CDD716C1AC225700092ED59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2CDD71721AC225700092ED59 /* CourseListerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CourseListerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CDD71771AC225700092ED59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CDD71781AC225700092ED59 /* CourseListerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListerTests.swift; sourceTree = "<group>"; };
+		2CDD71881AC22A430092ED59 /* CourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		2CDD71891AC22A430092ED59 /* CourseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +83,10 @@
 		2CDD715C1AC225700092ED59 /* CourseLister */ = {
 			isa = PBXGroup;
 			children = (
+				2CDD71641AC225700092ED59 /* CourseListViewController.swift */,
+				2CDD71881AC22A430092ED59 /* CourseCell.swift */,
+				2CDD71891AC22A430092ED59 /* CourseCell.xib */,
 				2CDD715F1AC225700092ED59 /* AppDelegate.swift */,
-				2CDD71641AC225700092ED59 /* ViewController.swift */,
 				2CDD71661AC225700092ED59 /* Main.storyboard */,
 				2CDD71691AC225700092ED59 /* Images.xcassets */,
 				2CDD716B1AC225700092ED59 /* LaunchScreen.xib */,
@@ -195,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CDD718B1AC22A430092ED59 /* CourseCell.xib in Resources */,
 				2CDD71681AC225700092ED59 /* Main.storyboard in Resources */,
 				2CDD716D1AC225700092ED59 /* LaunchScreen.xib in Resources */,
 				2CDD716A1AC225700092ED59 /* Images.xcassets in Resources */,
@@ -215,7 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CDD71651AC225700092ED59 /* ViewController.swift in Sources */,
+				2CDD718A1AC22A430092ED59 /* CourseCell.swift in Sources */,
+				2CDD71651AC225700092ED59 /* CourseListViewController.swift in Sources */,
 				2CDD71601AC225700092ED59 /* AppDelegate.swift in Sources */,
 				2CDD71631AC225700092ED59 /* CourseLister.xcdatamodeld in Sources */,
 			);
@@ -411,6 +419,7 @@
 				2CDD717E1AC225700092ED59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2CDD717F1AC225700092ED59 /* Build configuration list for PBXNativeTarget "CourseListerTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +428,7 @@
 				2CDD71811AC225700092ED59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
