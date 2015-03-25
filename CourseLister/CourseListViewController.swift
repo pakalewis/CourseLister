@@ -8,13 +8,17 @@
 
 import UIKit
 
-class CourseListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CourseListViewController: UIViewController, UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var courseListTableView: UITableView!
+    let sampleCourses = SampleCourses()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.navigationController?.delegate = self
+        self.automaticallyAdjustsScrollViewInsets = false;
 
         self.courseListTableView.dataSource = self
         self.courseListTableView.delegate = self
@@ -27,14 +31,16 @@ class CourseListViewController: UIViewController, UITableViewDelegate, UITableVi
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("COURSE_CELL", forIndexPath: indexPath) as UITableViewCell
-        cell.backgroundColor = UIColor.redColor()
+        let cell = tableView.dequeueReusableCellWithIdentifier("COURSE_CELL", forIndexPath: indexPath) as CourseCell
+        cell.titleLabel.text = self.sampleCourses.titles[indexPath.row]
+        cell.descriptionLabel.text = self.sampleCourses.descriptions[indexPath.row]
+//        cell.backgroundColor = UIColor.lightGrayColor()
         return cell
 
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.sampleCourses.titles.count
     }
     
 }
