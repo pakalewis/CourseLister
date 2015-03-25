@@ -16,28 +16,29 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5W8-Ee-B1p">
-                        <rect key="frame" x="98" y="0.0" width="322" height="42"/>
+                        <rect key="frame" x="116" y="0.0" width="304" height="42"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lu-7n-mV7" userLabel="Separator">
-                        <rect key="frame" x="98" y="42" width="322" height="2"/>
+                        <rect key="frame" x="116" y="42" width="304" height="2"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="2" id="Q2L-ze-y5g"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="253" text="Description" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZG-s8-fMA">
-                        <rect key="frame" x="98" y="44" width="322" height="127"/>
+                        <rect key="frame" x="116" y="44" width="304" height="127"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dXV-sk-6MR">
-                        <rect key="frame" x="0.0" y="0.0" width="96" height="171"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="dXV-sk-6MR">
+                        <rect key="frame" x="0.0" y="0.0" width="114" height="171"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="dXV-sk-6MR" secondAttribute="height" multiplier="1:1" id="dJx-hx-pe3"/>
+                            <constraint firstAttribute="width" secondItem="dXV-sk-6MR" secondAttribute="height" multiplier="2:3" id="vyz-md-SG0"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -68,6 +69,7 @@
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
+                        <exclude reference="uSh-69-nFY"/>
                         <exclude reference="FeA-fV-rha"/>
                         <exclude reference="Giv-7J-iMg"/>
                         <exclude reference="J3p-mj-3Oy"/>
@@ -76,9 +78,13 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="descriptionLabel" destination="pZG-s8-fMA" id="zEh-a4-ypE"/>
+                <outlet property="instructorImage" destination="dXV-sk-6MR" id="BZd-0l-oh3"/>
                 <outlet property="titleLabel" destination="5W8-Ee-B1p" id="Jl2-kg-0f0"/>
             </connections>
             <point key="canvasLocation" x="39" y="83"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="placeholder.jpeg" width="234" height="234"/>
+    </resources>
 </document>

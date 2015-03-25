@@ -18,6 +18,8 @@
 		2CDD718B1AC22A430092ED59 /* CourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDD71891AC22A430092ED59 /* CourseCell.xib */; };
 		2CDD718D1AC22D970092ED59 /* SampleCourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDD718C1AC22D970092ED59 /* SampleCourses.swift */; };
 		2CDD71901AC23E350092ED59 /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDD718E1AC23E350092ED59 /* CourseDetailViewController.swift */; };
+		2CDD71931AC243960092ED59 /* placeholder.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2CDD71921AC243960092ED59 /* placeholder.jpeg */; };
+		2CFE70DE1AC247A000EAB998 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE70DD1AC247A000EAB998 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		2CDD71891AC22A430092ED59 /* CourseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseCell.xib; sourceTree = "<group>"; };
 		2CDD718C1AC22D970092ED59 /* SampleCourses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCourses.swift; sourceTree = "<group>"; };
 		2CDD718E1AC23E350092ED59 /* CourseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
+		2CDD71921AC243960092ED59 /* placeholder.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpeg; sourceTree = "<group>"; };
+		2CFE70DD1AC247A000EAB998 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +94,10 @@
 				2CDD71641AC225700092ED59 /* CourseListViewController.swift */,
 				2CDD718E1AC23E350092ED59 /* CourseDetailViewController.swift */,
 				2CDD718C1AC22D970092ED59 /* SampleCourses.swift */,
+				2CFE70DD1AC247A000EAB998 /* Course.swift */,
 				2CDD71881AC22A430092ED59 /* CourseCell.swift */,
 				2CDD71891AC22A430092ED59 /* CourseCell.xib */,
+				2CDD71921AC243960092ED59 /* placeholder.jpeg */,
 				2CDD715F1AC225700092ED59 /* AppDelegate.swift */,
 				2CDD71661AC225700092ED59 /* Main.storyboard */,
 				2CDD71691AC225700092ED59 /* Images.xcassets */,
@@ -209,6 +215,7 @@
 			files = (
 				2CDD718B1AC22A430092ED59 /* CourseCell.xib in Resources */,
 				2CDD71681AC225700092ED59 /* Main.storyboard in Resources */,
+				2CDD71931AC243960092ED59 /* placeholder.jpeg in Resources */,
 				2CDD716D1AC225700092ED59 /* LaunchScreen.xib in Resources */,
 				2CDD716A1AC225700092ED59 /* Images.xcassets in Resources */,
 			);
@@ -229,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CDD718D1AC22D970092ED59 /* SampleCourses.swift in Sources */,
+				2CFE70DE1AC247A000EAB998 /* Course.swift in Sources */,
 				2CDD718A1AC22A430092ED59 /* CourseCell.swift in Sources */,
 				2CDD71651AC225700092ED59 /* CourseListViewController.swift in Sources */,
 				2CDD71601AC225700092ED59 /* AppDelegate.swift in Sources */,

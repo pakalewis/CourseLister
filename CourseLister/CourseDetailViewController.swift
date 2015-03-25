@@ -13,14 +13,12 @@ class CourseDetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
     
-    
-    var titleText : NSString?
-    var descriptionText : NSString?
+    var course : Course?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.titleLabel.text = self.titleText
-        self.descriptionTextView.text = self.descriptionText
+        self.titleLabel.text = self.course?.courseTitle
+        self.descriptionTextView.text = self.course?.courseDescription
 
     }
 }

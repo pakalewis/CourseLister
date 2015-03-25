@@ -6,7 +6,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Course List View Controller-->
+        <!--Courses-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CourseListViewController" customModule="CourseLister" customModuleProvider="target" sceneMemberID="viewController">
@@ -38,7 +38,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="YaG-zc-8Nb"/>
+                    <navigationItem key="navigationItem" title="Courses" id="YaG-zc-8Nb"/>
                     <connections>
                         <outlet property="courseListTableView" destination="0kU-dw-XKV" id="VSg-jz-CLw"/>
                     </connections>
