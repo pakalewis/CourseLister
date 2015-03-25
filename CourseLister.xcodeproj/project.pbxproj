@@ -17,6 +17,7 @@
 		2CDD718A1AC22A430092ED59 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDD71881AC22A430092ED59 /* CourseCell.swift */; };
 		2CDD718B1AC22A430092ED59 /* CourseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDD71891AC22A430092ED59 /* CourseCell.xib */; };
 		2CDD718D1AC22D970092ED59 /* SampleCourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDD718C1AC22D970092ED59 /* SampleCourses.swift */; };
+		2CDD71901AC23E350092ED59 /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDD718E1AC23E350092ED59 /* CourseDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		2CDD71881AC22A430092ED59 /* CourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		2CDD71891AC22A430092ED59 /* CourseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseCell.xib; sourceTree = "<group>"; };
 		2CDD718C1AC22D970092ED59 /* SampleCourses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCourses.swift; sourceTree = "<group>"; };
+		2CDD718E1AC23E350092ED59 /* CourseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				2CDD71641AC225700092ED59 /* CourseListViewController.swift */,
+				2CDD718E1AC23E350092ED59 /* CourseDetailViewController.swift */,
 				2CDD718C1AC22D970092ED59 /* SampleCourses.swift */,
 				2CDD71881AC22A430092ED59 /* CourseCell.swift */,
 				2CDD71891AC22A430092ED59 /* CourseCell.xib */,
@@ -229,6 +232,7 @@
 				2CDD718A1AC22A430092ED59 /* CourseCell.swift in Sources */,
 				2CDD71651AC225700092ED59 /* CourseListViewController.swift in Sources */,
 				2CDD71601AC225700092ED59 /* AppDelegate.swift in Sources */,
+				2CDD71901AC23E350092ED59 /* CourseDetailViewController.swift in Sources */,
 				2CDD71631AC225700092ED59 /* CourseLister.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

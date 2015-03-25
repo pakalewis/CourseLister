@@ -34,7 +34,6 @@ class CourseListViewController: UIViewController, UINavigationControllerDelegate
         let cell = tableView.dequeueReusableCellWithIdentifier("COURSE_CELL", forIndexPath: indexPath) as CourseCell
         cell.titleLabel.text = self.sampleCourses.titles[indexPath.row]
         cell.descriptionLabel.text = self.sampleCourses.descriptions[indexPath.row]
-//        cell.backgroundColor = UIColor.lightGrayColor()
         return cell
 
     }
@@ -43,5 +42,16 @@ class CourseListViewController: UIViewController, UINavigationControllerDelegate
         return self.sampleCourses.titles.count
     }
     
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("COURSE_DETAIL") as CourseDetailViewController
+        detailVC.titleText = self.sampleCourses.titles[indexPath.row]
+        detailVC.descriptionText = self.sampleCourses.descriptions[indexPath.row]
+        self.navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
+    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 50
+    }
 }
 

@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="526-MN-oxb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Course List View Controller-->
@@ -43,7 +45,60 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1135" y="370"/>
+            <point key="canvasLocation" x="951" y="370"/>
+        </scene>
+        <!--Course Detail View Controller-->
+        <scene sceneID="p7l-9O-LII">
+            <objects>
+                <viewController storyboardIdentifier="COURSE_DETAIL" id="fVJ-SG-fJA" customClass="CourseDetailViewController" customModule="CourseLister" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Ch-Tg-wj2"/>
+                        <viewControllerLayoutGuide type="bottom" id="cKh-Y0-u9G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gEc-UG-jtR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0I7-iM-lVc" userLabel="Title">
+                                <rect key="frame" x="60" y="30" width="480" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XoX-fL-sF3">
+                                <rect key="frame" x="16" y="60" width="568" height="540"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0I7-iM-lVc" firstAttribute="width" secondItem="gEc-UG-jtR" secondAttribute="width" multiplier="0.8" id="10c-hw-91L"/>
+                            <constraint firstItem="cKh-Y0-u9G" firstAttribute="top" secondItem="XoX-fL-sF3" secondAttribute="bottom" id="CUf-b2-npu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XoX-fL-sF3" secondAttribute="trailing" id="GDQ-Gz-JWk"/>
+                            <constraint firstAttribute="centerX" secondItem="0I7-iM-lVc" secondAttribute="centerX" id="PhM-ho-KVz"/>
+                            <constraint firstItem="XoX-fL-sF3" firstAttribute="top" secondItem="0I7-iM-lVc" secondAttribute="bottom" constant="10" id="ehW-Az-HOg"/>
+                            <constraint firstItem="XoX-fL-sF3" firstAttribute="leading" secondItem="gEc-UG-jtR" secondAttribute="leadingMargin" id="lBN-x1-2ji"/>
+                            <constraint firstItem="0I7-iM-lVc" firstAttribute="top" secondItem="0Ch-Tg-wj2" secondAttribute="bottom" constant="10" id="z7W-6f-xir"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="XoX-fL-sF3" id="gpE-Ia-4uf"/>
+                        <outlet property="titleLabel" destination="0I7-iM-lVc" id="Jly-fa-GRZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MaG-H8-m90" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1621" y="370"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xia-He-fqa">
