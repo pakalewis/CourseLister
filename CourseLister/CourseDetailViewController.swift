@@ -35,7 +35,7 @@ class CourseDetailViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         // This sizes the height of the title textView to fit the content.
-        // There are some layout issues when editing the title changes the number of lines of text
+        // Some layout issues occur when the number of lines of text changes
         self.titleHeightConstraint.constant = self.titleTextView.sizeThatFits(CGSizeMake(self.titleTextView.frame.size.width, CGFloat.max)).height
     }
 

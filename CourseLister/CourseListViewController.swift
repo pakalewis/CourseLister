@@ -29,14 +29,13 @@ class CourseListViewController: UIViewController, UINavigationControllerDelegate
         // Register the custom tableViewCell
         let nib = UINib(nibName: "CourseCell", bundle: NSBundle.mainBundle())
         self.courseListTableView.registerNib(nib, forCellReuseIdentifier: "COURSE_CELL")
-
     }
 
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        // Moved this here so it gets called when returning from the detail view
+        // This needs to happen when returning from the detail/add views since there may have been edits or additions to the courses
         self.fetchCourses()
         self.courseListTableView.reloadData()
     }
@@ -59,6 +58,8 @@ class CourseListViewController: UIViewController, UINavigationControllerDelegate
         self.courses = fetchResult as [Course]
     }
     
+    
+    // The add button was pressed. 
     func addCourse() {
         let addCourseVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ADD_COURSE") as AddCourseViewController
         self.presentViewController(addCourseVC, animated: true, completion: nil)

@@ -16,29 +16,29 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5W8-Ee-B1p">
-                        <rect key="frame" x="116" y="0.0" width="304" height="42"/>
+                        <rect key="frame" x="107" y="0.0" width="313" height="42"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4lu-7n-mV7" userLabel="Separator">
-                        <rect key="frame" x="116" y="42" width="304" height="2"/>
+                        <rect key="frame" x="107" y="42" width="313" height="2"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="2" id="Q2L-ze-y5g"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="253" text="Description" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZG-s8-fMA">
-                        <rect key="frame" x="116" y="44" width="304" height="127"/>
+                        <rect key="frame" x="107" y="44" width="313" height="127"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="dXV-sk-6MR">
-                        <rect key="frame" x="0.0" y="0.0" width="114" height="171"/>
+                        <rect key="frame" x="0.0" y="33" width="105" height="105"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="dXV-sk-6MR" secondAttribute="height" multiplier="1:1" id="dJx-hx-pe3"/>
-                            <constraint firstAttribute="width" secondItem="dXV-sk-6MR" secondAttribute="height" multiplier="2:3" id="vyz-md-SG0"/>
+                            <constraint firstAttribute="width" secondItem="dXV-sk-6MR" secondAttribute="height" multiplier="1:1" id="vyz-md-SG0"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -49,32 +49,20 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="5W8-Ee-B1p" firstAttribute="leading" secondItem="dXV-sk-6MR" secondAttribute="trailing" constant="2" id="1PJ-p5-wER"/>
-                    <constraint firstItem="dXV-sk-6MR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2Y2-gt-hHT"/>
+                    <constraint firstItem="5W8-Ee-B1p" firstAttribute="width" secondItem="dXV-sk-6MR" secondAttribute="width" multiplier="3" id="7h7-x6-sXo"/>
                     <constraint firstItem="4lu-7n-mV7" firstAttribute="centerX" secondItem="5W8-Ee-B1p" secondAttribute="centerX" id="Abc-d5-tfJ"/>
-                    <constraint firstItem="5W8-Ee-B1p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FeA-fV-rha"/>
                     <constraint firstItem="4lu-7n-mV7" firstAttribute="width" secondItem="5W8-Ee-B1p" secondAttribute="width" id="GDb-Hn-Wfb"/>
-                    <constraint firstItem="pZG-s8-fMA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Giv-7J-iMg"/>
                     <constraint firstItem="5W8-Ee-B1p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IdL-BA-lWP"/>
-                    <constraint firstItem="pZG-s8-fMA" firstAttribute="top" secondItem="5W8-Ee-B1p" secondAttribute="bottom" id="J3p-mj-3Oy"/>
+                    <constraint firstAttribute="centerY" secondItem="dXV-sk-6MR" secondAttribute="centerY" id="M5o-sy-rfh"/>
                     <constraint firstAttribute="trailing" secondItem="5W8-Ee-B1p" secondAttribute="trailing" id="U5D-fk-GqQ"/>
                     <constraint firstItem="pZG-s8-fMA" firstAttribute="height" secondItem="5W8-Ee-B1p" secondAttribute="height" multiplier="3" id="aX9-Dq-dfe"/>
                     <constraint firstAttribute="trailing" secondItem="pZG-s8-fMA" secondAttribute="trailing" id="drF-Tl-XOC"/>
                     <constraint firstItem="dXV-sk-6MR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hdm-I6-OPT"/>
                     <constraint firstAttribute="bottom" secondItem="pZG-s8-fMA" secondAttribute="bottom" id="jIX-PG-Mg5"/>
                     <constraint firstItem="pZG-s8-fMA" firstAttribute="top" secondItem="4lu-7n-mV7" secondAttribute="bottom" id="mrT-6i-rdv"/>
-                    <constraint firstItem="dXV-sk-6MR" firstAttribute="width" secondItem="5W8-Ee-B1p" secondAttribute="width" multiplier="0.3" id="uSh-69-nFY"/>
-                    <constraint firstAttribute="bottom" secondItem="dXV-sk-6MR" secondAttribute="bottom" id="xa3-di-13a"/>
                     <constraint firstItem="4lu-7n-mV7" firstAttribute="top" secondItem="5W8-Ee-B1p" secondAttribute="bottom" id="zU6-XL-S7C"/>
                     <constraint firstItem="pZG-s8-fMA" firstAttribute="leading" secondItem="5W8-Ee-B1p" secondAttribute="leading" id="zWi-Rn-0jn"/>
                 </constraints>
-                <variation key="default">
-                    <mask key="constraints">
-                        <exclude reference="uSh-69-nFY"/>
-                        <exclude reference="FeA-fV-rha"/>
-                        <exclude reference="Giv-7J-iMg"/>
-                        <exclude reference="J3p-mj-3Oy"/>
-                    </mask>
-                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="descriptionLabel" destination="pZG-s8-fMA" id="zEh-a4-ypE"/>
