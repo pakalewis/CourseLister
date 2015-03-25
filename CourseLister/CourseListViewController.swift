@@ -17,8 +17,6 @@ class CourseListViewController: UIViewController, UINavigationControllerDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        println("view did load")
         
         self.navigationController?.delegate = self
         
@@ -37,7 +35,8 @@ class CourseListViewController: UIViewController, UINavigationControllerDelegate
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        println("view will appear")
+        
+        // Moved this here so it gets called when returning from the detail view
         self.fetchCourses()
         self.courseListTableView.reloadData()
     }
